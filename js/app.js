@@ -91,7 +91,7 @@ async function loadData() {
 }
 
 async function loadCategorias() {
-  const res = await fetch("data/categories_sorted.json");
+  const res = await fetch("data/categories.json");
   categorias = await res.json();
 
   renderCategorias(categorias);
