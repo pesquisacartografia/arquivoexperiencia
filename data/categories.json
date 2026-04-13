@@ -1,0 +1,638 @@
+[
+    {
+        "id": 1,
+        "categoria": "Experiência acadêmica"
+    },
+    {
+        "id": 2,
+        "categoria": "Experiência afetiva"
+    },
+    {
+        "id": 3,
+        "categoria": "Experiência artística"
+    },
+    {
+        "id": 4,
+        "categoria": "Experiência biográfica"
+    },
+    {
+        "id": 5,
+        "categoria": "Experiência coletiva"
+    },
+    {
+        "id": 6,
+        "categoria": "Experiência como abertura"
+    },
+    {
+        "id": 7,
+        "categoria": "Experiência como ação"
+    },
+    {
+        "id": 8,
+        "categoria": "Experiência como acontecimento"
+    },
+    {
+        "id": 9,
+        "categoria": "Experiência como aprendizagem"
+    },
+    {
+        "id": 10,
+        "categoria": "Experiência como apropriação"
+    },
+    {
+        "id": 11,
+        "categoria": "Experiência como ato"
+    },
+    {
+        "id": 12,
+        "categoria": "Experiência como avaliação"
+    },
+    {
+        "id": 13,
+        "categoria": "Experiência como base"
+    },
+    {
+        "id": 14,
+        "categoria": "Experiência como campo"
+    },
+    {
+        "id": 15,
+        "categoria": "Experiência como capacitação"
+    },
+    {
+        "id": 16,
+        "categoria": "Experiência como cartografia"
+    },
+    {
+        "id": 17,
+        "categoria": "Experiência como conhecimento"
+    },
+    {
+        "id": 18,
+        "categoria": "Experiência como construção"
+    },
+    {
+        "id": 19,
+        "categoria": "Experiência como dimensão"
+    },
+    {
+        "id": 20,
+        "categoria": "Experiência como dispositivo"
+    },
+    {
+        "id": 21,
+        "categoria": "Experiência como elemento"
+    },
+    {
+        "id": 22,
+        "categoria": "Experiência como encontro"
+    },
+    {
+        "id": 23,
+        "categoria": "Experiência como evento"
+    },
+    {
+        "id": 24,
+        "categoria": "Experiência como ferramenta"
+    },
+    {
+        "id": 25,
+        "categoria": "Experiência como integração"
+    },
+    {
+        "id": 26,
+        "categoria": "Experiência como mediação"
+    },
+    {
+        "id": 27,
+        "categoria": "Experiência como narrativa"
+    },
+    {
+        "id": 28,
+        "categoria": "Experiência como participação"
+    },
+    {
+        "id": 29,
+        "categoria": "Experiência como potência"
+    },
+    {
+        "id": 30,
+        "categoria": "Experiência como prática"
+    },
+    {
+        "id": 31,
+        "categoria": "Experiência como processo"
+    },
+    {
+        "id": 32,
+        "categoria": "Experiência como registro"
+    },
+    {
+        "id": 33,
+        "categoria": "Experiência como relação"
+    },
+    {
+        "id": 34,
+        "categoria": "Experiência como renovação"
+    },
+    {
+        "id": 35,
+        "categoria": "Experiência como saber"
+    },
+    {
+        "id": 36,
+        "categoria": "Experiência como subjetivação"
+    },
+    {
+        "id": 37,
+        "categoria": "Experiência como testemunho"
+    },
+    {
+        "id": 38,
+        "categoria": "Experiência como trajetória"
+    },
+    {
+        "id": 39,
+        "categoria": "Experiência como transformação"
+    },
+    {
+        "id": 40,
+        "categoria": "Experiência como vivência"
+    },
+    {
+        "id": 41,
+        "categoria": "Experiência compartilhada"
+    },
+    {
+        "id": 42,
+        "categoria": "Experiência complexa"
+    },
+    {
+        "id": 43,
+        "categoria": "Experiência criativa"
+    },
+    {
+        "id": 44,
+        "categoria": "Experiência crítica"
+    },
+    {
+        "id": 45,
+        "categoria": "Experiência cultural"
+    },
+    {
+        "id": 46,
+        "categoria": "Experiência de ensino"
+    },
+    {
+        "id": 47,
+        "categoria": "Experiência de formas diversas"
+    },
+    {
+        "id": 48,
+        "categoria": "Experiência de leitura"
+    },
+    {
+        "id": 49,
+        "categoria": "Experiência dialética"
+    },
+    {
+        "id": 50,
+        "categoria": "Experiência do outro"
+    },
+    {
+        "id": 51,
+        "categoria": "Experiência docente"
+    },
+    {
+        "id": 52,
+        "categoria": "Experiência e ação"
+    },
+    {
+        "id": 53,
+        "categoria": "Experiência e ambiente"
+    },
+    {
+        "id": 54,
+        "categoria": "Experiência e apreensão"
+    },
+    {
+        "id": 55,
+        "categoria": "Experiência e arte"
+    },
+    {
+        "id": 56,
+        "categoria": "Experiência e articulação"
+    },
+    {
+        "id": 57,
+        "categoria": "Experiência e autonomia"
+    },
+    {
+        "id": 58,
+        "categoria": "Experiência e autoria"
+    },
+    {
+        "id": 59,
+        "categoria": "Experiência e aventura"
+    },
+    {
+        "id": 60,
+        "categoria": "Experiência e cognitivo"
+    },
+    {
+        "id": 61,
+        "categoria": "Experiência e colaboração"
+    },
+    {
+        "id": 62,
+        "categoria": "Experiência e comunicação"
+    },
+    {
+        "id": 63,
+        "categoria": "Experiência e conexão"
+    },
+    {
+        "id": 64,
+        "categoria": "Experiência e conflito"
+    },
+    {
+        "id": 65,
+        "categoria": "Experiência e consciência"
+    },
+    {
+        "id": 66,
+        "categoria": "Experiência e contexto"
+    },
+    {
+        "id": 67,
+        "categoria": "Experiência e corpo"
+    },
+    {
+        "id": 68,
+        "categoria": "Experiência e cotidiano"
+    },
+    {
+        "id": 69,
+        "categoria": "Experiência e diálogo"
+    },
+    {
+        "id": 70,
+        "categoria": "Experiência e emancipação"
+    },
+    {
+        "id": 71,
+        "categoria": "Experiência e escrita"
+    },
+    {
+        "id": 72,
+        "categoria": "Experiência e espaço"
+    },
+    {
+        "id": 73,
+        "categoria": "Experiência e estudante"
+    },
+    {
+        "id": 74,
+        "categoria": "Experiência e existência"
+    },
+    {
+        "id": 75,
+        "categoria": "Experiência e governamentalidade"
+    },
+    {
+        "id": 76,
+        "categoria": "Experiência e identidade"
+    },
+    {
+        "id": 77,
+        "categoria": "Experiência e imersão"
+    },
+    {
+        "id": 78,
+        "categoria": "Experiência e inclusão"
+    },
+    {
+        "id": 79,
+        "categoria": "Experiência e inovação"
+    },
+    {
+        "id": 80,
+        "categoria": "Experiência e instrumento"
+    },
+    {
+        "id": 81,
+        "categoria": "Experiência e interação"
+    },
+    {
+        "id": 82,
+        "categoria": "Experiência e invenção"
+    },
+    {
+        "id": 83,
+        "categoria": "Experiência e investigação"
+    },
+    {
+        "id": 84,
+        "categoria": "Experiência e lazer"
+    },
+    {
+        "id": 85,
+        "categoria": "Experiência e linguagem"
+    },
+    {
+        "id": 86,
+        "categoria": "Experiência e memória"
+    },
+    {
+        "id": 87,
+        "categoria": "Experiência e método"
+    },
+    {
+        "id": 88,
+        "categoria": "Experiência e metodologia"
+    },
+    {
+        "id": 89,
+        "categoria": "Experiência e museu"
+    },
+    {
+        "id": 90,
+        "categoria": "Experiência e negociação"
+    },
+    {
+        "id": 91,
+        "categoria": "Experiência e passagem"
+    },
+    {
+        "id": 92,
+        "categoria": "Experiência e performance"
+    },
+    {
+        "id": 93,
+        "categoria": "Experiência e pertencimento"
+    },
+    {
+        "id": 94,
+        "categoria": "Experiência e pesquisa"
+    },
+    {
+        "id": 95,
+        "categoria": "Experiência e política"
+    },
+    {
+        "id": 96,
+        "categoria": "Experiência e práxis"
+    },
+    {
+        "id": 97,
+        "categoria": "Experiência e problematização"
+    },
+    {
+        "id": 98,
+        "categoria": "Experiência e produção"
+    },
+    {
+        "id": 99,
+        "categoria": "Experiência e profissional"
+    },
+    {
+        "id": 100,
+        "categoria": "Experiência e re/conhecimento"
+    },
+    {
+        "id": 101,
+        "categoria": "Experiência e repertório"
+    },
+    {
+        "id": 102,
+        "categoria": "Experiência e resiliência"
+    },
+    {
+        "id": 103,
+        "categoria": "Experiência e resistência"
+    },
+    {
+        "id": 104,
+        "categoria": "Experiência e responsabilidade"
+    },
+    {
+        "id": 105,
+        "categoria": "Experiência e sabedoria"
+    },
+    {
+        "id": 106,
+        "categoria": "Experiência e social"
+    },
+    {
+        "id": 107,
+        "categoria": "Experiência e subjetividade"
+    },
+    {
+        "id": 108,
+        "categoria": "Experiência e sujeito"
+    },
+    {
+        "id": 109,
+        "categoria": "Experiência e tecnologia"
+    },
+    {
+        "id": 110,
+        "categoria": "Experiência e tempo"
+    },
+    {
+        "id": 111,
+        "categoria": "Experiência e território"
+    },
+    {
+        "id": 112,
+        "categoria": "Experiência e trabalho"
+    },
+    {
+        "id": 113,
+        "categoria": "Experiência e valorização"
+    },
+    {
+        "id": 114,
+        "categoria": "Experiência e vivência"
+    },
+    {
+        "id": 115,
+        "categoria": "Experiência e vulnerabilidade"
+    },
+    {
+        "id": 116,
+        "categoria": "Experiência educacional"
+    },
+    {
+        "id": 117,
+        "categoria": "Experiência educativa"
+    },
+    {
+        "id": 118,
+        "categoria": "Experiência em oposição"
+    },
+    {
+        "id": 119,
+        "categoria": "Experiência em relação"
+    },
+    {
+        "id": 120,
+        "categoria": "Experiência emocional"
+    },
+    {
+        "id": 121,
+        "categoria": "Experiência epistemológica"
+    },
+    {
+        "id": 122,
+        "categoria": "Experiência escolar"
+    },
+    {
+        "id": 123,
+        "categoria": "Experiência estética"
+    },
+    {
+        "id": 124,
+        "categoria": "Experiência ética"
+    },
+    {
+        "id": 125,
+        "categoria": "Experiência etnográfica"
+    },
+    {
+        "id": 126,
+        "categoria": "Experiência existencial"
+    },
+    {
+        "id": 127,
+        "categoria": "Experiência fenomelógica"
+    },
+    {
+        "id": 128,
+        "categoria": "Experiência filosófica"
+    },
+    {
+        "id": 129,
+        "categoria": "Experiência formativa"
+    },
+    {
+        "id": 130,
+        "categoria": "Experiência histórica"
+    },
+    {
+        "id": 131,
+        "categoria": "Experiência individual"
+    },
+    {
+        "id": 132,
+        "categoria": "Experiência infantil"
+    },
+    {
+        "id": 133,
+        "categoria": "Experiência intelectual"
+    },
+    {
+        "id": 134,
+        "categoria": "Experiência juvenil"
+    },
+    {
+        "id": 135,
+        "categoria": "Experiência literária"
+    },
+    {
+        "id": 136,
+        "categoria": "Experiência mediada"
+    },
+    {
+        "id": 137,
+        "categoria": "Experiência na educação"
+    },
+    {
+        "id": 138,
+        "categoria": "Experiência na relação"
+    },
+    {
+        "id": 139,
+        "categoria": "Experiência no sentido comum da palavra"
+    },
+    {
+        "id": 140,
+        "categoria": "Experiência pedagógica"
+    },
+    {
+        "id": 141,
+        "categoria": "Experiência performática"
+    },
+    {
+        "id": 142,
+        "categoria": "Experiência pessoal"
+    },
+    {
+        "id": 143,
+        "categoria": "Experiência poética"
+    },
+    {
+        "id": 144,
+        "categoria": "Experiência política"
+    },
+    {
+        "id": 145,
+        "categoria": "Experiência prática"
+    },
+    {
+        "id": 146,
+        "categoria": "Experiência profissional"
+    },
+    {
+        "id": 147,
+        "categoria": "Experiência pública"
+    },
+    {
+        "id": 148,
+        "categoria": "Experiência reflexiva"
+    },
+    {
+        "id": 149,
+        "categoria": "Experiência relacional"
+    },
+    {
+        "id": 150,
+        "categoria": "Experiência sensível"
+    },
+    {
+        "id": 151,
+        "categoria": "Experiência sensorial"
+    },
+    {
+        "id": 152,
+        "categoria": "Experiência significativa"
+    },
+    {
+        "id": 153,
+        "categoria": "Experiência simbólica"
+    },
+    {
+        "id": 154,
+        "categoria": "Experiência sonora"
+    },
+    {
+        "id": 155,
+        "categoria": "Experiência subjetiva"
+    },
+    {
+        "id": 156,
+        "categoria": "Experiência visual"
+    },
+    {
+        "id": 157,
+        "categoria": "Experiência vivida"
+    },
+    {
+        "id": 158,
+        "categoria": "Experiências educacionais"
+    },
+    {
+        "id": 159,
+        "categoria": "Revalorização da experiência"
+    }
+]

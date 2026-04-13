@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Arquivo de Experiência</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="img/fav.ico">
+        <meta name="description" content="Arquivo de Experiência">
+        <meta name="author" content="Gabriel Philippe Martins Corrêa">
+        <meta property="og:title" content="Arquivo de Experiência">
+        <meta property="og:description" content="Arquivo de Experiência">
+        <meta property="og:image" content="img/banner.jpg">
+        <meta property="og:url" content="https://www.labcarta.com.br/">
+        <meta property="og:type" content="website">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <p class="logo">Arquivo de Experiência</p>
+                <button onclick="showPage('home')">Início</button>
+                <button onclick="showPage('equipe')">Equipe</button>
+                <button onclick="showPage('arquivo')">Arquivo</button>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h1>Arquivo de Experiência</h1>
+                <!-- <h2 style="margin: 10px 0 10px 0">Contexto da Pesquisa</h2>
+                <p style="margin: 10px 0 10px 0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+                
+                <!-- <h2 style="margin: 10px 0 10px 0">Produções e Publicações</h2>
+                <ol style="margin-left: 40px;">
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                </ol> -->
+
+                <h3 style="margin: 10px 0 10px 0">Pitch - Organização e sistematização de dados com excel e interface interativa na pesquisa</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eIop_NSSGio?si=TXDHNGmr11y3bzY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                
+                <h3 style="margin: 10px 0 10px 0">Pitch - Metodologia inovadora: seleção de revistas e uso de ia para análise acadêmica</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jn36NZB6ahw?si=qhJSolZZYPg-0Vak" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
+
+            <section id="equipe" class="hidden">
+                <h1>Equipe</h1>
+                <div id="teamContainer">
+                </div>
+            </section>
+
+            <section id="arquivo" class="hidden">
+                <h1>Arquivo de Experiência</h1>
+                <div class="arquivo-container">
+
+                    <aside class="sidebar">
+                        <div id="categoriasSelecionadas"></div>
+                        <input type="text" id="searchCategoria" placeholder="Filtrar categorias...">
+                        <button id="limparCategorias">Limpar categorias</button>
+                        <div id="listaCategorias"></div>
+                    </aside>
+
+                    <div class="conteudo">
+                        <input type="text" id="searchInput" placeholder="Digite um termo para buscar no Arquivo...">
+                        
+                        <div id="totalResultados"></div>
+
+                        <div id="resultados"></div>
+
+                        <div id="paginacao"></div>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+        <footer class="footer">
+
+            <div class="footer-col">
+                <h4 style="margin-bottom: 10px;">Instituições</h4>
+
+                <p>Universidade e Fomento</p>
+                <div class="logos">
+                    <img src="img/other/uemg.png">
+                    <img src="img/other/fapemig.png">
+                </div>
+            </div>
+
+            <div class="footer-col center">
+                <h4 style="margin-bottom: 10px;">Informações</h4>
+                <p>© 2026 Arquivo de Experiência</p>
+                <p>Edital FAPEMIG nº 009/2024 (APQ-04789-24)</p>
+                <p>Edital FAPEMIG nº 010/2025 (FCT-00005-25)</p>
+            </div>
+
+            <div class="footer-col">
+                <h4 style="margin-bottom: 10px;">Contatos</h4>
+                <p><i class="bi bi-envelope"></i></i> pesquisacartografia@gmail.com</p>
+            </div>
+
+        </footer>
+        <script src="js/app.js"></script>
+    </body>
+</html>
