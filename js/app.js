@@ -549,9 +549,9 @@ function toggleTexto() {
   }
 }
 
-function toggleMetodologia() {
+function toggleMetodologia(btn) {
   const texto = document.getElementById("textoMetodologia");
-  const btn = document.querySelector(".btn-lermais");
+  // const btn = document.querySelector(".btn-lermais");
 
   texto.classList.toggle("texto-expandido");
 
