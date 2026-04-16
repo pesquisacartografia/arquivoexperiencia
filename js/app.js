@@ -4,6 +4,7 @@
 
 let database = [];
 let categorias = [];
+let publicacoes = [];
 let categoriasSelecionadas = new Set();
 
 let resultadosFiltrados = [];
@@ -11,58 +12,7 @@ let paginaAtual = 1;
 
 const itensPorPagina = 10;
 
-
-// ======================================================
-// DADOS - EQUIPE
-// ======================================================
-
-const equipe = [
-  {
-    nome: "Fernando Zanetti",
-    instituicao: "Universidade Federal de Minas Gerais",
-    funcao: "Coordenador",
-    email: "fernandozanetti@hotmail.com",
-    bio: "Outra bio...",
-    foto: "img/team/fernando.png",
-    lattes: "http://lattes.cnpq.br/1395386104738431"
-  },
-  {
-    nome: "Karine Miranda",
-    instituicao: "Universidade Federal de Minas Gerais",
-    funcao: "Pesquisadora Bolsista",
-    email: "mkarine945@gmail.com",
-    bio: "Descrição completa da pessoa...",
-    foto: "img/team/karine.png",
-    lattes: "http://lattes.cnpq.br/1255208143513486"
-  },
-  {
-    nome: "Gabriel Corrêa",
-    instituicao: "Universidade Federal de Minas Gerais",
-    funcao: "Desenvolvedor e Pesquisador",
-    email: "gabriel.correa@gamarco.com.br",
-    bio: "Outra bio...",
-    foto: "img/team/gabriel.png",
-    lattes: "http://lattes.cnpq.br/2021789826051133"
-  },
-  {
-    nome: "Dandahra Evangelista",
-    instituicao: "Universidade Federal de Minas Gerais",
-    funcao: "Bolsista de IC",
-    email: "dandahraarchanjo@gmail.com",
-    bio: "Descrição completa da pessoa...",
-    foto: "img/team/dandahra.png",
-    lattes: "http://lattes.cnpq.br/7998854283352166"
-  },
-  {
-    nome: "Maria Cardinal",
-    instituicao: "Universidade Federal de Minas Gerais",
-    funcao: "Bolsista de IC",
-    email: "cardinal.ma05@gmail.com",
-    bio: "Descrição completa da pessoa...",
-    foto: "img/team/maria.png",
-    lattes: "http://lattes.cnpq.br/5062069923007508"
-  }
-];
+let equipe = [];
 
 
 // ======================================================
@@ -91,7 +41,7 @@ async function loadData() {
 }
 
 async function loadCategorias() {
-  const res = await fetch("data/categories_sorted.json");
+  const res = await fetch("data/categories.json");
   categorias = await res.json();
 
   renderCategorias(categorias);
@@ -142,6 +92,115 @@ function render() {
   renderTotalResultados();
   renderResultados();
   renderPaginacao();
+}
+
+// ======================================================
+// PUBLICACOES
+// ======================================================
+
+async function loadPublicacoes() {
+  // const res = await fetch("data/publications.json");
+  const res = await fetch("https://sheetdb.io/api/v1/inx9laveb5ir0");
+  publicacoes = await res.json();
+  renderPublicacoes();
+}
+
+async function loadCapitulos() {
+  // const res = await fetch("data/publications.json");
+  const res = await fetch("https://sheetdb.io/api/v1/gr3upgd454ful");
+  publicacoes = await res.json();
+  renderCapitulos();
+}
+
+
+// FUNÇÃO CHAMA .JSON LOCAL
+// function renderPublicacoes() {
+//   const container = document.getElementById("publicacoesContainer");
+//   container.innerHTML = "";
+
+//   publicacoes.forEach(pub => {
+
+//     const div = document.createElement("div");
+//     div.className = "publicacao";
+
+//     div.innerHTML = `
+//       <p>
+//         <strong>${pub.autoria}</strong>.
+//         ${pub.titulo}.
+//         <em>${pub.periodico}</em>,
+//         v. ${pub.volume}, n. ${pub.numero},
+//         p. ${pub.paginas}, ${pub.data}.
+//       </p>
+
+//       <p>
+//         DOI: <a href="${pub.doi}" target="_blank">${pub.doi}</a><br>
+//         <a href="${pub.link}" target="_blank" class="team-btn">Acessar publicação</a>
+//       </p>
+//     `;
+
+//     container.appendChild(div);
+//   });
+// }
+
+// FUNCAO CHAMA API (GOOGLE SHEETS TO .JSON)
+function renderPublicacoes() {
+  const container = document.getElementById("publicacoesContainer");
+  container.innerHTML = "";
+
+  publicacoes.forEach(pub => {
+
+    const div = document.createElement("div");
+    div.className = "publicacao";
+
+    div.innerHTML = `
+      <p>
+        ${pub.tipo || ""}
+        ${pub.autoria || ""}.
+        ${pub.titulo || ""}.
+        <strong>${pub.periodico || ""}</strong>,
+        v. ${pub.volume || "-"}, n. ${pub.numero || "-"},
+        p. ${pub.paginas || "-"}, ${pub.data || ""}.
+      </p>
+
+      <p>
+        DOI/ISSN: ${pub.doi || "Não informado"}<br>
+        <a href="${pub.link || "#"}" target="_blank" class="team-btn">Acessar publicação</a>
+      </p>
+    `;
+
+    container.appendChild(div);
+  });
+}
+
+function renderCapitulos() {
+  const container = document.getElementById("capitulosContainer");
+  container.innerHTML = "";
+
+  publicacoes.forEach(pub => {
+
+    const div = document.createElement("div");
+    div.className = "capitulo";
+
+    div.innerHTML = `
+      <p>
+        ${pub.autoria || ""}.
+        ${pub.titulo || ""}.
+        <em>In: </em>
+        ${pub.orgs || ""} (orgs.).
+        <strong>${pub.livro || ""}</strong>.
+        ${pub.cidade || "<em>[S. l.]</em>"}:
+        ${pub.editora || "<em>[s. n.]</em>"},
+        ${pub.data || ""}. p. ${pub.paginas || "-"}.
+      </p>
+
+      <p>
+        DOI/ISBN: ${pub.doi || "Não informado"}<br>
+        <a href="${pub.link || "#"}" target="_blank" class="team-btn">Acessar publicação</a>
+      </p>
+    `;
+
+    container.appendChild(div);
+  });
 }
 
 
@@ -381,6 +440,17 @@ function renderEquipe() {
   });
 }
 
+async function loadEquipe() {
+  try {
+    const res = await fetch("data/team.json");
+    equipe = await res.json();
+
+    renderEquipe();
+  } catch (erro) {
+    console.error("Erro ao carregar equipe:", erro);
+  }
+}
+
 
 // ======================================================
 // UTILIDADES
@@ -404,7 +474,9 @@ window.onload = () => {
 
   loadData();
   loadCategorias();
-  renderEquipe();
+  loadPublicacoes();
+  loadCapitulos();
+  loadEquipe();
 
   atualizarBotaoLimpar();
 
@@ -462,4 +534,30 @@ function renderTotalResultados() {
       : ` • ${totalCategorias} categoria${totalCategorias > 1 ? "s" : ""} selecionada${totalCategorias > 1 ? "s" : ""}`;
 
   el.textContent = textoBase + textoFiltrado + textoCategorias;
+}
+
+function toggleTexto() {
+  const texto = document.getElementById("textoContexto");
+  const btn = document.querySelector(".btn-lermais");
+
+  texto.classList.toggle("texto-expandido");
+
+  if (texto.classList.contains("texto-expandido")) {
+    btn.textContent = "Ler menos";
+  } else {
+    btn.textContent = "Ler mais";
+  }
+}
+
+function toggleMetodologia() {
+  const texto = document.getElementById("textoMetodologia");
+  const btn = document.querySelector(".btn-lermais");
+
+  texto.classList.toggle("texto-expandido");
+
+  if (texto.classList.contains("texto-expandido")) {
+    btn.textContent = "Ler menos";
+  } else {
+    btn.textContent = "Ler mais";
+  }
 }

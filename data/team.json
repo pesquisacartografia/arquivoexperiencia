@@ -1,0 +1,47 @@
+[
+    {
+        "nome": "Fernando Zanetti",
+        "instituicao": "Universidade do Estado de Minas Gerais",
+        "funcao": "Coordenador",
+        "email": "fernandozanetti@hotmail.com",
+        "bio": "Mini biografia...",
+        "foto": "img/team/fernando.png",
+        "lattes": "http://lattes.cnpq.br/1395386104738431"
+    },
+    {
+        "nome": "Karine Miranda",
+        "instituicao": "Universidade Federal de Minas Gerais",
+        "funcao": "Pesquisadora Bolsista",
+        "email": "mkarine945@gmail.com",
+        "bio": "Mini biografia...",
+        "foto": "img/team/karine.png",
+        "lattes": "http://lattes.cnpq.br/1255208143513486"
+    },
+    {
+        "nome": "Gabriel Corrêa",
+        "instituicao": "Universidade Federal de Minas Gerais",
+        "funcao": "Desenvolvedor e Pesquisador",
+        "email": "gabriel.correa@gamarco.com.br",
+        "bio": "Mini biografia...",
+        "foto": "img/team/gabriel.png",
+        "lattes": "http://lattes.cnpq.br/2021789826051133"
+    },
+    {
+        "nome": "Dandahra Evangelista",
+        "instituicao": "Universidade do Estado de Minas Gerais",
+        "funcao": "Bolsista de IC",
+        "email": "dandahraarchanjo@gmail.com",
+        "bio": "Mini biografia...",
+        "foto": "img/team/dandahra.png",
+        "lattes": "http://lattes.cnpq.br/7998854283352166"
+    },
+    {
+        "nome": "Maria Cardinal",
+        "instituicao": "Universidade do Estado de Minas Gerais",
+        "funcao": "Bolsista de IC",
+        "email": "cardinal.ma05@gmail.com",
+        "bio": "Mini biografia...",
+        "foto": "img/team/maria.png",
+        "lattes": "http://lattes.cnpq.br/5062069923007508"
+    }
+]

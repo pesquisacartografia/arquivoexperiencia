@@ -1,0 +1,35 @@
+[
+    {
+        "titulo": "Título do artigo",
+        "autoria": "Autor 1; Autor 2",
+        "periodico": "Revista X",
+        "volume": "10",
+        "numero": "2",
+        "paginas": "45-60",
+        "data": "2024",
+        "doi": "https://doi.org/xxx",
+        "link": "https://link.com"
+    },
+    {
+        "titulo": "Título do artigo",
+        "autoria": "Autor 1; Autor 2",
+        "periodico": "Revista X",
+        "volume": "10",
+        "numero": "2",
+        "paginas": "45-60",
+        "data": "2024",
+        "doi": "https://doi.org/xxx",
+        "link": "https://link.com"
+    },
+    {
+        "titulo": "Título do artigo",
+        "autoria": "Autor 1; Autor 2",
+        "periodico": "Revista X",
+        "volume": "10",
+        "numero": "2",
+        "paginas": "45-60",
+        "data": "2024",
+        "doi": "https://doi.org/xxx",
+        "link": "https://link.com"
+    }
+]
