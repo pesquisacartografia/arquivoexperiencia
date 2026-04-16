@@ -535,6 +535,7 @@ function renderTotalResultados() {
 
   el.textContent = textoBase + textoFiltrado + textoCategorias;
 }
+<<<<<<< HEAD
 
 function toggleTexto() {
   const texto = document.getElementById("textoContexto");
@@ -561,3 +562,5 @@ function toggleMetodologia() {
     btn.textContent = "Ler mais";
   }
 }
+=======
+>>>>>>> 3499f4106743f12c99c1e93ba8f43a6bcacaa09f
