@@ -101,14 +101,14 @@ function render() {
 
 async function loadPublicacoes() {
   // const res = await fetch("data/publications.json");
-  const res = await fetch("https://sheetdb.io/api/v1/inx9laveb5ir0");
+  const res = await fetch("https://script.google.com/macros/s/AKfycbwxuL7qEWPeLYbgYZKhbFDnbXb-WWUxAHq0-Y0G22VmZ5wHwiXUOWHkLHoMQ_cPv7_ixg/exec");
   publicacoes = await res.json();
   renderPublicacoes();
 }
 
 async function loadCapitulos() {
   // const res = await fetch("data/publications.json");
-  const res = await fetch("https://sheetdb.io/api/v1/gr3upgd454ful");
+  const res = await fetch("https://script.google.com/macros/s/AKfycbxrXe7TxlnAh1Hb6oou8FY_f0ltxZvYiNIBNgt_Eas6C2Fcv6NU4megCyKrtMlLvn0V/exec");
   publicacoes = await res.json();
   renderCapitulos();
 }
@@ -238,7 +238,7 @@ function renderResultados() {
 
     div.innerHTML = `
 
-      <h3>${item.titulo_artigo}</h3>
+      <h3>${item.titulo_artigo?.toUpperCase()}</h3>
       <p>${item.autoria || ""} (${item.ano_publicacao || ""})</p>
 
       <div class="resultado-header">
@@ -599,7 +599,7 @@ document.getElementById("exportarLidos").onclick = () => {
     (item.categorias || []).map(c => ({
 
       id_registro: item.id_registro,
-      titulo_artigo: item.titulo_artigo,
+      titulo_artigo: item.titulo_artigo?.toUpperCase(),
       area_publicacao: item.area_publicacao,
       periodico: item.periodico,
       ano_publicacao: item.ano_publicacao,
