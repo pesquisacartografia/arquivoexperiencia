@@ -324,7 +324,7 @@ input {
    BOTÃO LIMPAR CATEGORIAS
 ====================================================== */
 
-#limparCategorias {
+#limparCategorias, #exportarLidos {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
@@ -852,4 +852,32 @@ input {
   padding: 8px 14px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.resultado-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-lido {
+  background: #eee;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.2s;
+  /* width: 100px; */
+  margin-top: 10px;
+}
+
+.btn-lido:hover {
+  background: #ddd;
+}
+
+.btn-lido.ativo {
+  background: #1C3952;
+  color: white;
+  font-weight: 500;
 }

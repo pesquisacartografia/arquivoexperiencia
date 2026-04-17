@@ -6,6 +6,7 @@ let database = [];
 let categorias = [];
 let publicacoes = [];
 let categoriasSelecionadas = new Set();
+let lidos = new Set(JSON.parse(localStorage.getItem("lidos")) || []);
 
 let resultadosFiltrados = [];
 let paginaAtual = 1;
@@ -236,9 +237,17 @@ function renderResultados() {
     `).join("");
 
     div.innerHTML = `
+
       <h3>${item.titulo_artigo}</h3>
       <p>${item.autoria || ""} (${item.ano_publicacao || ""})</p>
-      <button class="toggle-btn">Ver detalhes ▼</button>
+
+      <div class="resultado-header">
+        <button class="toggle-btn">Ver detalhes ▼</button>
+
+        <button class="btn-lido ${lidos.has(item.id_registro) ? "ativo" : ""}">
+          ${lidos.has(item.id_registro) ? "✓ Lido" : "Lido"}
+        </button>
+      </div>
 
       <div class="detalhes hidden">
         ${categoriasHTML}
@@ -250,6 +259,19 @@ function renderResultados() {
 
     const btn = div.querySelector(".toggle-btn");
     const detalhes = div.querySelector(".detalhes");
+
+    const btnLido = div.querySelector(".btn-lido");
+
+    btnLido.onclick = () => {
+      if (lidos.has(item.id_registro)) {
+        lidos.delete(item.id_registro);
+      } else {
+        lidos.add(item.id_registro);
+      }
+
+      localStorage.setItem("lidos", JSON.stringify([...lidos]));
+      render(); // re-renderiza
+    };
 
     btn.onclick = () => {
       detalhes.classList.toggle("hidden");
@@ -561,3 +583,54 @@ function toggleMetodologia(btn) {
     btn.textContent = "Ler mais";
   }
 }
+
+document.getElementById("exportarLidos").onclick = () => {
+
+  const lidosArray = database.filter(item =>
+    lidos.has(item.id_registro)
+  );
+
+  if (!lidosArray.length) {
+    alert("Nenhum artigo marcado como lido.");
+    return;
+  }
+
+  const dados = lidosArray.flatMap(item =>
+    (item.categorias || []).map(c => ({
+
+      id_registro: item.id_registro,
+      titulo_artigo: item.titulo_artigo,
+      area_publicacao: item.area_publicacao,
+      periodico: item.periodico,
+      ano_publicacao: item.ano_publicacao,
+      autoria: item.autoria,
+      link_acesso: item.link_acesso,
+      doi: item.doi,
+
+      categoria: c.categoria,
+      conceito: c.conceito,
+      descricao: c.descricao
+
+    }))
+  );
+
+  const ws = XLSX.utils.json_to_sheet(dados);
+  const wb = XLSX.utils.book_new();
+
+  XLSX.utils.book_append_sheet(wb, ws, "Lidos");
+
+  const agora = new Date();
+
+  const dia = String(agora.getDate()).padStart(2, "0");
+  const mes = String(agora.getMonth() + 1).padStart(2, "0");
+  const ano = agora.getFullYear();
+
+  const hora = String(agora.getHours()).padStart(2, "0");
+  const minuto = String(agora.getMinutes()).padStart(2, "0");
+
+  const total = dados.length;
+
+  const nomeArquivo = `exportacao_arquivo_${ano}${mes}${dia}_${hora}${minuto}_${total}.xlsx`;
+
+  XLSX.writeFile(wb, nomeArquivo);
+};
